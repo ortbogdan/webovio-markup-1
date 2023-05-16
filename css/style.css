@@ -1,0 +1,41 @@
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 1440px;
+    padding: 24px 165px 0 165px;
+
+}
+
+.container {
+    position: relative;
+    width: 1110px;
+
+    
+}
+/* Header */
+.top {
+    
+    /* background-image: url(../images/Bitmap.jpg);
+    background-color: rgb(190, 218, 116); */
+}
+.menu {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tools-bar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: aqua;
+}
+/* Hero */
+.hero {
+
+    padding: 188px 0 211px 0;
+    background-image: url(../images/Bitmap.jpg);
+    background-size: cover;
+    background-color: rgb(190, 218, 116);
+}
