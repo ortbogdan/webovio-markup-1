@@ -15,6 +15,11 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .container {
     position: relative;
     width: 1110px;  
@@ -63,7 +68,9 @@ h1, h2, h3, h4, h5, h6, p {
 
     background-image: url(../images/Bitmap.jpg);
     background-size: cover;
-    background-color: rgb(190, 218, 116);
+    background-color: rgb(234, 215, 211);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero-article {
     width: 615px;
@@ -82,11 +89,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 60px;
     line-height: 1.23;
 }
-
 .hero-article-link {
-    /* font-family: 'FontAwesome'; */
-
-    
     line-height: 1.13;
     
     color: rgb(255, 215, 35);
@@ -108,3 +111,36 @@ h1, h2, h3, h4, h5, h6, p {
        
     }
 /* Section Clients */
+.clients {
+    display: flex;
+    justify-content: end;
+
+    padding-top: 0;
+    padding-right: 0;
+    transform: translateY(-100px);  
+}
+.clients-box {
+    width: 100%;
+    padding-right: 165px;
+
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 2px;
+}
+.clients-list {
+    display: flex;
+    justify-content: end;
+
+    padding: 60px 0 54px 65px;
+
+}
+.clients-list-item {
+    width: 156px;
+    height: 113px;
+    margin-right: 65px;
+}
+.clients-list-item:last-child {
+    margin: 0;
+}
