@@ -1,41 +1,110 @@
+
+/* Global styles  */
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     width: 1440px;
-    padding: 24px 165px 0 165px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
 
+
+    font-size: 16px;
+    line-height: 1.63;
+    color: rgb(255, 255, 255);
 }
-
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
 .container {
     position: relative;
-    width: 1110px;
-
-    
+    width: 1110px;  
+}
+.section {
+    padding: 230px 165px 0 165px;
 }
 /* Header */
 .top {
-    
-    /* background-image: url(../images/Bitmap.jpg);
-    background-color: rgb(190, 218, 116); */
+    padding-top: 0;
 }
 .menu {
     position: absolute;
-    width: 100%;
+    width: 1110px;
     display: flex;
     justify-content: space-between;
+
+    padding-top: 25px;
 
 }
 .tools-bar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    background-color: aqua;
+    background-color: rgb(245, 246, 247);
 }
-/* Hero */
-.hero {
+.tools-bar-box {
+    width: 20px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tools-bar-item {
+    height: 2px;
 
-    padding: 188px 0 211px 0;
+    background-color: rgb(0, 0, 0);
+}
+/* Section Hero */
+.hero {
+    padding-bottom: 210px;
+
     background-image: url(../images/Bitmap.jpg);
     background-size: cover;
     background-color: rgb(190, 218, 116);
 }
+.hero-article {
+    width: 615px;
+    height: 410px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-article-top {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.hero-article-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.23;
+}
+
+.hero-article-link {
+    /* font-family: 'FontAwesome'; */
+
+    
+    line-height: 1.13;
+    
+    color: rgb(255, 215, 35);
+}
+.hero-article-link::before {
+        content: '';
+        display: inline-block;
+        
+        height: 0; 
+        width: 0;
+        border: 4px solid;
+        border-color: 
+        rgb(255, 215, 35)
+        rgb(255, 215, 35)
+        transparent
+        transparent;
+        transform: rotate(45deg);
+
+       
+    }
+/* Section Clients */
