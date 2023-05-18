@@ -10,7 +10,8 @@ body {
 
     font-size: 16px;
     line-height: 1.63;
-    color: rgb(255, 255, 255);
+
+    color: rgb(77, 83, 60);  
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -27,6 +28,46 @@ ol, ul {
 .section {
     padding: 230px 165px 0 165px;
 }
+/* END Global styles */
+
+/* Article component */
+.article {
+    width: 475px;
+    height: 365px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+.article-top {
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: rgba(77, 83, 60, 0.9);
+}
+.article-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+}
+.article-link {
+    line-height: 1.13;
+    text-decoration: underline;
+    color: rgb(212, 214, 212);
+    fill: rgb(212, 214, 212);
+
+
+}
+.article-link:hover {
+    color: rgb(255, 215, 35);
+    fill: rgb(255, 215, 35);
+}
+.arrow-icon {
+    width: 13px;
+    height: 13px;
+}
+/* END Article component */
+
 /* Header */
 .top {
     padding-top: 0;
@@ -71,45 +112,19 @@ ol, ul {
     background-color: rgb(234, 215, 211);
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
 }
 .hero-article {
     width: 615px;
     height: 410px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 .hero-article-top {
-    font-size: 14px;
-    line-height: 1.5;
+    color:inherit;
 }
 .hero-article-title {
-    font-weight: 700;
     font-size: 60px;
     line-height: 1.23;
 }
-.hero-article-link {
-    line-height: 1.13;
-    
-    color: rgb(255, 215, 35);
-}
-.hero-article-link::before {
-        content: '';
-        display: inline-block;
-        
-        height: 0; 
-        width: 0;
-        border: 4px solid;
-        border-color: 
-        rgb(255, 215, 35)
-        rgb(255, 215, 35)
-        transparent
-        transparent;
-        transform: rotate(45deg);
-
-       
-    }
 /* Section Clients */
 .clients {
     display: flex;
@@ -125,8 +140,9 @@ ol, ul {
 
     background-color: rgb(255, 255, 255);
     z-index: 100;
-
+    
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    background-blend-mode: overlay;
     border-radius: 2px;
 }
 .clients-list {
@@ -143,4 +159,63 @@ ol, ul {
 }
 .clients-list-item:last-child {
     margin: 0;
+}
+/* Services */
+.services {
+    padding-top: 0;
+    background-color: rgb(242, 242, 242);
+}
+.services-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.services-coment {
+    width: 474px;
+    height: 644px;
+    padding: 245px 8px 60px 40px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+}
+.services-coment-text {
+    margin-bottom: 50px;
+
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.63;
+}
+.services-coment-person {
+    display: flex;
+
+}
+.services-coment-person-avatar {
+    margin-right: 30px;
+
+    border-radius: 50%;
+
+    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+}
+.services-coment-person-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+}
+.services-coment-person-data-name {
+    font-weight: 700;
+    font-size: 22px;
+   
+}
+.services-coment-person-data-job {
+   color: rgb(21, 41, 52);
+}
+/* Coment component */
+.coment {
+    width: 455px;
+    height: 245px;
+
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 8px;
 }
