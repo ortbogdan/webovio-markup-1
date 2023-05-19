@@ -27,6 +27,9 @@ ol, ul {
 }
 .section {
     padding: 230px 165px 0 165px;
+
+    background-color: rgb(255, 255, 255);
+    
 }
 /* END Global styles */
 
@@ -49,6 +52,9 @@ ol, ul {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.28;
+}
+.article-text {
+    color: rgba(33, 56, 66, 0.6)
 }
 .article-link {
     line-height: 1.13;
@@ -127,16 +133,22 @@ ol, ul {
 }
 /* Section Clients */
 .clients {
+    
     display: flex;
     justify-content: end;
+    position: absolute;
 
     padding-top: 0;
     padding-right: 0;
-    transform: translateY(-100px);  
+    transform: translateY(-100px); 
+    
+    z-index: 50;
+    background-color: transparent;
 }
 .clients-box {
-    width: 100%;
-    padding-right: 165px;
+    width: 1275px;
+    
+    padding: 60px 165px 54px 65px;
 
     background-color: rgb(255, 255, 255);
     z-index: 100;
@@ -149,7 +161,7 @@ ol, ul {
     display: flex;
     justify-content: end;
 
-    padding: 60px 0 54px 65px;
+    
 
 }
 .clients-list-item {
@@ -163,7 +175,7 @@ ol, ul {
 /* Services */
 .services {
     padding-top: 0;
-    background-color: rgb(242, 242, 242);
+    padding-bottom: 150px;   
 }
 .services-box {
     display: flex;
@@ -211,11 +223,66 @@ ol, ul {
 .services-coment-person-data-job {
    color: rgb(21, 41, 52);
 }
+/* END Services section */
 /* Coment component */
 .coment {
+    position: absolute;
     width: 455px;
     height: 245px;
+    padding: 30px 33px 30px 30px;
 
+    background-color: rgb(255, 255, 255);
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
     border-radius: 8px;
+}
+.coment-text {
+    margin-bottom: 24px;
+}
+.coment-person {
+    display: flex;
+}
+.coment-person-avatar {
+    object-fit:contain;
+    margin-right: 14px;
+    border-radius: 50%;
+    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+}
+.coment-person-data-name {
+    
+}
+/* END Coment component */
+
+/* Projects section */
+.projects {
+    padding-top: 0;
+}
+.projects-box {
+    padding-top: 150px;
+    border-top: 1px solid rgba(33, 56, 66, 0.1);
+}
+.projects-discription {
+    margin-bottom: 110px;
+    display: flex;
+    align-items: center;
+}
+.projects-discription-text {
+    width: 518px;
+    height: 78px;
+    margin-left: 135px;
+}
+.img-block {
+    width: 735px;
+    height: 550px;  
+}
+.left {
+    transform: translateX(-165px);
+}
+.right {
+    transform: translateX(165px);
+}
+.projects-list-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
