@@ -4,9 +4,8 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     width: 1440px;
     margin-top: 0;
-    margin-left: auto;
     margin-right: auto;
-
+    margin-left: auto;
 
     font-size: 16px;
     line-height: 1.63;
@@ -23,13 +22,16 @@ ol, ul {
 }
 .container {
     position: relative;
-    width: 1110px;  
+    width: 100%;
+    padding: 0 165px 0 165px; 
+    
 }
 .section {
-    padding: 230px 165px 0 165px;
+    padding-top: 230px;
 
     background-color: rgb(255, 255, 255);
-    
+    /* margin-right: auto;
+    margin-left: auto; */
 }
 /* END Global styles */
 
@@ -133,21 +135,21 @@ ol, ul {
 }
 /* Section Clients */
 .clients {
-    
     display: flex;
     justify-content: end;
-    position: absolute;
-
+    position: relative;
+    /* right: 0; */
     padding-top: 0;
     padding-right: 0;
     transform: translateY(-100px); 
     
     z-index: 50;
     background-color: transparent;
+
 }
 .clients-box {
     width: 1275px;
-    
+    position: absolute;
     padding: 60px 165px 54px 65px;
 
     background-color: rgb(255, 255, 255);
@@ -156,6 +158,7 @@ ol, ul {
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
     background-blend-mode: overlay;
     border-radius: 2px;
+    
 }
 .clients-list {
     display: flex;
@@ -273,13 +276,11 @@ ol, ul {
       
 }
 .projects-box {
-    
     padding-top: 150px;
     
     border-top: 1px solid rgba(33, 56, 66, 0.1);
 }
-.projects-discription {
-    
+.projects-discription {   
     margin-bottom: 110px;
     display: flex;
     align-items: center;
@@ -293,24 +294,22 @@ ol, ul {
     position: relative;
 }
 .projects-list-card {
-    /* width: 1305px; */
     height: 615px;
     margin-bottom: 100px;
     position: relative;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-
+    justify-content: space-between;
 }
-/* .projects-list-card--left {
-    left: -140px;
-} */
-/* .projects-list-card--right {
-    right: -140px;
-} */
+.projects-list-card--left {
+    padding-right: 135px;
+}
+.projects-list-card--right {
+    padding-left: 135px;
+}
 .projects-preview {
     height: 100%;
-    position: absolute;
+    position: relative;
     
     width: 775px;
 
@@ -320,20 +319,19 @@ ol, ul {
 .projects-preview-img {
     width: 735px;
     height: 550px;
+    position: absolute;
+    top: 0;
 
     object-fit: contain;
 }
-.projects-preview--left {
-    left: -140px;
-}
-.projects-list-card--left {
-    justify-content: end;
-}
+
 .projects-article {
     height: 397px;
     padding-right: 55px;
 }
-.projects-preview--right {
-    right: -140px;
-    justify-content: end;
+.projects-preview-img--right {
+   right: 0;
+}
+.projects-preview-img--left {
+   left: 0;
 }
