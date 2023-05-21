@@ -10,7 +10,7 @@ body {
 
     font-size: 16px;
     line-height: 1.63;
-
+    font-weight: 400;
     color: rgb(77, 83, 60);  
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -230,6 +230,7 @@ ol, ul {
     width: 455px;
     height: 245px;
     padding: 30px 33px 30px 30px;
+    
 
     background-color: rgb(255, 255, 255);
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
@@ -237,6 +238,8 @@ ol, ul {
 }
 .coment-text {
     margin-bottom: 24px;
+
+    font-style: italic;
 }
 .coment-person {
     display: flex;
@@ -248,19 +251,35 @@ ol, ul {
     box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
 }
 .coment-person-data-name {
-    
+    font-weight: 700;
+}
+.coment-person-data-job {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.coment--right {
+    bottom: 0;
+    right: 0;
+}
+.coment--left {
+    bottom: 0;
+    left: 0;
 }
 /* END Coment component */
 
 /* Projects section */
 .projects {
     padding-top: 0;
+      
 }
 .projects-box {
+    
     padding-top: 150px;
+    
     border-top: 1px solid rgba(33, 56, 66, 0.1);
 }
 .projects-discription {
+    
     margin-bottom: 110px;
     display: flex;
     align-items: center;
@@ -270,19 +289,51 @@ ol, ul {
     height: 78px;
     margin-left: 135px;
 }
-.img-block {
-    width: 735px;
-    height: 550px;  
-}
-.left {
-    transform: translateX(-165px);
-}
-.right {
-    transform: translateX(165px);
+.projects-list {
+    position: relative;
 }
 .projects-list-card {
+    /* width: 1305px; */
+    height: 615px;
+    margin-bottom: 100px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
+}
+/* .projects-list-card--left {
+    left: -140px;
+} */
+/* .projects-list-card--right {
+    right: -140px;
+} */
+.projects-preview {
+    height: 100%;
+    position: absolute;
+    
+    width: 775px;
+
+    display: flex;
+    
+}
+.projects-preview-img {
+    width: 735px;
+    height: 550px;
+
+    object-fit: contain;
+}
+.projects-preview--left {
+    left: -140px;
+}
+.projects-list-card--left {
+    justify-content: end;
+}
+.projects-article {
+    height: 397px;
+    padding-right: 55px;
+}
+.projects-preview--right {
+    right: -140px;
+    justify-content: end;
 }
