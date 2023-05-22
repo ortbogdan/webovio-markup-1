@@ -62,10 +62,9 @@ ol, ul {
 .article-link {
     line-height: 1.13;
     text-decoration: underline;
+    
     color: rgb(212, 214, 212);
     fill: rgb(212, 214, 212);
-
-
 }
 .article-link:hover {
     color: rgb(255, 215, 35);
@@ -167,9 +166,6 @@ ol, ul {
 .clients-list {
     display: flex;
     justify-content: end;
-
-    
-
 }
 .clients-list-item {
     width: 156px;
@@ -235,10 +231,8 @@ ol, ul {
 .coment {
     position: absolute;
     width: 455px;
-    height: 245px;
     padding: 30px 33px 30px 30px;
     
-
     background-color: rgb(255, 255, 255);
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
     border-radius: 8px;
@@ -340,8 +334,10 @@ ol, ul {
    left: 0;
 }
 /* END Projects section */
+/* Evaluation section */
 .evaluation {
     padding-top: 0;
+    padding-bottom: 320px;
 }
 
 .evaluation-title {
@@ -375,4 +371,69 @@ ol, ul {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.42;
+}
+/* END Evaluation section */
+/* Actiion section */
+.action {
+    position: absolute;
+
+    padding: 70px 0;
+
+    background: rgb(250, 250, 250);
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+
+    transform: translateY(-170px);
+}
+.action-box {
+    width: 1275px;
+}
+.action-title {
+    margin-bottom: 50px;
+
+    font-size: 60px;
+    line-height: 1.23;
+}
+/* END Actiion section */
+/* Footer */
+.bottom {
+    padding-top: 310px;
+    padding-bottom: 30px;
+
+    background-image: url(../images/footer/bg.jpg);
+
+    background-color: rgb(79, 85, 61);
+
+    line-height: 2.5;
+
+    color: rgb(182, 193, 151);
+}
+.contacts-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 452px;
+    height: 88px;
+
+    font-style: normal;
+    
+}
+.text {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.contacts-list-item-title { 
+    margin-bottom: 8px;
+}
+.bottom-list {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid rgb(93, 101, 68);
+}
+.desigh-element {
+    width: 1px;
+    height: 210px;
+
+    background-color: rgb(93, 101, 68);;
 }
