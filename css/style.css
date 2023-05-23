@@ -1,5 +1,8 @@
 
 /* Global styles  */
+html {
+    background-color: rgb(242, 242, 242);
+}
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     width: 1440px;
@@ -45,6 +48,14 @@ ol, ul {
 .link:hover {
     color: rgb(255, 215, 35);
     fill: rgb(255, 215, 35);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 258px;
+    height: 40px;
 }
 /* END Global styles */
 
@@ -417,6 +428,9 @@ ol, ul {
 
     color: rgb(182, 193, 151);
 }
+.contacts {
+    margin-bottom: 52px;
+}
 .contacts-list {
     display: flex;
     justify-content: space-between;
@@ -425,15 +439,13 @@ ol, ul {
     height: 88px;
 
     font-style: normal;
-    
 }
-.text {
+.contacts-list-item-link {
     font-weight: 700;
     color: rgb(255, 255, 255);
 }
 .social-info-list {
-    height: 232px;
-    
+    height: 232px;  
 }
 .social-info-list-item:not(:last-child) {
     margin-bottom: 20px;
@@ -453,17 +465,56 @@ ol, ul {
     margin-bottom: 8px;
 }
 .bottom-list {
+    height: 320px;
+    margin-bottom: 60px;
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
-
+    
     border-top: 1px solid rgb(93, 101, 68);
+}
+.bottom-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.bottom-list-item-title {
+    margin-bottom: 21px;
+
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
 }
 .desigh-element {
     width: 1px;
     height: 210px;
 
     background-color: rgb(93, 101, 68);;
+}
+.bottom-box {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgb(93, 101, 68);
+}
+.bottom-box-link {
+    display: block;
+
+    width: 200px;
+    height: 35px;
+}
+.bottom-box-logo {
+    width: 100%;
+   
+    object-fit: contain;
+}
+.bottom-box-text {
+    font-size: 14px; 
 }
 /* END Footer */
 
@@ -501,3 +552,5 @@ ol, ul {
     background-color: rgb(255, 215, 35);
     fill: rgb(255, 255, 255);
 }
+/* END Social links list component */
+
