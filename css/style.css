@@ -21,15 +21,14 @@ h1, h2, h3, h4, h5, h6, p {
 ol, ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 .container {
     position: relative;
     width: 100%;
-    padding: 0 165px 0 165px; 
+    padding: 0 165px; 
 
-    
-    
 }
 .section {
     padding-top: 230px;
@@ -55,7 +54,7 @@ ol, ul {
     align-items: center;
 
     width: 258px;
-    height: 40px;
+    
 }
 /* END Global styles */
 
@@ -99,19 +98,14 @@ ol, ul {
 
 /* Header */
 .top {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    border-top: 0;
+    position: absolute;
 }
 .menu {
-    position: absolute;
     width: 1110px;
     display: flex;
     justify-content: space-between;
 
     padding-top: 25px;
-
 }
 .tools-bar {
     width: 40px;
@@ -328,20 +322,15 @@ ol, ul {
     padding-left: 135px;
 }
 .projects-preview {
+    width: 775px;
     height: 100%;
     position: relative;
-    
-    width: 775px;
 
     display: flex;
+    align-items: flex-start;
 }
-.projects-preview-img {
-    width: 735px;
-    height: 550px;
-    position: absolute;
-    top: 0;
-
-    object-fit: contain;
+.projects-preview--right {
+    justify-content: flex-end;
 }
 
 .projects-article {
