@@ -110,6 +110,8 @@ ol, ul {
 .tools-bar {
     width: 40px;
     height: 40px;
+    padding: 14px 11px 13px 11px;
+
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -117,19 +119,6 @@ ol, ul {
 
     background-color: rgb(245, 246, 247);
 }
-.tools-bar-box {
-    width: 20px;
-    height: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.tools-bar-item {
-    height: 2px;
-
-    background-color: rgb(0, 0, 0);
-}
-/* Section Hero */
 .hero {
     padding-bottom: 210px;
 
@@ -153,12 +142,13 @@ ol, ul {
 }
 /* Section Clients */
 .clients {
+    position: absolute;
     display: flex;
     justify-content: end;
-    position: relative;
+    
     padding-top: 0;
-    padding-right: 0;
     padding-bottom: 0;
+    
     transform: translateY(-100px); 
     
     z-index: 50;
@@ -166,26 +156,24 @@ ol, ul {
 
 }
 .clients-box {
-    width: 1275px;
-    position: absolute;
-    padding: 60px 165px 54px 65px;
-
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
+    width: 100%;
     
-    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
-    background-blend-mode: overlay;
-    border-radius: 2px;
-    
+    padding-left: 165px;
+    padding-right: 0;
 }
 .clients-list {
     display: flex;
-    justify-content: end;
+   
+    padding: 60px 166px 54px 65px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    background-blend-mode: overlay;
+    border-radius: 2px;
 }
 .clients-list-item {
     width: 156px;
     height: 113px;
-    margin-right: 65px;
+    margin-right: 66px;
 }
 .clients-list-item:last-child {
     margin: 0;
